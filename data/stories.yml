@@ -1,0 +1,22 @@
+version: "2.0"
+
+stories:
+- story: say hi
+  steps: 
+  - intent: greet
+  - action: utter_greet
+
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: who are you
+  steps: 
+  - intent: whoareyou
+  - action: utter_iamabot
+
+- story: what to do
+  steps: 
+  - intent: whattodo
+  - action: utter_answer_whattodo

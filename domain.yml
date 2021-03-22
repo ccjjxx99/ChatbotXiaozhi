@@ -1,0 +1,29 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - thanks
+  - affirm
+  - deny
+  - out_of_scope
+  - whoareyou
+  - whattodo
+  - bot_challenge
+responses:
+  utter_greet:
+    - text: "嗨！我是一个疫情通的小机器人😉 可以帮你快速查询隔离政策 想要试试看吗？告诉我你想去的城市吧"
+  
+  utter_goodbye:
+    - text: "再见👋"
+  
+  utter_iamabot:
+
+    - text: "我是疫情通的小机器人🤖️"
+  
+  utter_answer_whattodo:
+    - text: "我可以帮你查询隔离政策"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
