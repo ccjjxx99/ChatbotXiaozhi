@@ -1,4 +1,7 @@
 /venv/
+/models/
+/data/total_word_feature_extractor_zh.dat
+/data/bert=base=chinese
 events.db
 events.db-shm
 events.db-wal
