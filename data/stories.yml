@@ -20,3 +20,35 @@ stories:
   steps: 
   - intent: whattodo
   - action: utter_answer_whattodo
+
+- story: path about time
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: whattime
+  - action: action_show_time
+
+- story: ask covid19_fromtopolicy with keywords
+  steps:
+    - or:
+      - intent: query_covid19_fromtopolicy_from
+      - intent: query_covid19_fromtopolicy_to
+      - intent: query_covid19_fromtopolicy_keyword
+    - action: fromto_city_form
+    - active_loop: fromto_city_form
+    - slot_was_set:
+      - requested_slot: departure
+    - slot_was_set:
+      - departure: 340100
+    - slot_was_set:
+      - requested_slot: destination
+    - slot_was_set:
+      - destination: 621000
+    - slot_was_set:
+      - requested_slot: null
+    - active_loop: null
+    - action: utter_submit
+    - action: action_search_covid19_fromtopolicy
+    - action: action_utter_covid19_fromtopolicy
+
+

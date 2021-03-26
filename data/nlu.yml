@@ -110,3 +110,100 @@ nlu:
     - 你能干什么
     - 你能做什么
     - 干嘛
+
+- intent: whattime
+  examples: |
+    - 几点了
+    - 什么时候了
+    - 几点
+
+- intent: slot_city
+  examples: |
+    - [上海]{"entity": "city"}
+    - [大理]{"entity": "city"}
+    - [西双版纳]{"entity": "city"}
+    - 去[合肥]{"entity": "city"}
+    - 在[广州]{"entity": "city"}
+    - 回[香港]{"entity": "city"}
+
+- intent: query_covid19_fromtopolicy
+  examples: |
+    - 隔离
+    - 隔离政策
+    - 帮我看看隔离政策
+    - 从[合肥]{"entity": "city", "role": "departure"}去[安庆]{"entity": "city", "role": "destination"}要隔离吗
+    - 回[安庆]{"entity": "city", "role": "destination"}，从[合肥]{"entity": "city", "role": "departure"}出发，要隔离吗？
+    - 从[西安]{"entity": "city", "role": "departure"}去[北京]{"entity": "city", "role": "destination"}要隔离吗
+    - [乌鲁木齐]{"entity": "city", "role": "destination"}的隔离政策
+    - 要不要居家隔离
+    - 能不能回家
+    - 我能回家吗
+    - 从[上海]{"entity": "city", "role": "departure"}回家要不要隔离
+    - 能从[合肥]{"entity": "city", "role": "departure"}回家吗
+    - 我在[北京]{"entity": "city", "role": "departure"}，回家要不要隔离
+    - 回[北京]{"entity": "city", "role": "destination"}，从[西安]{"entity": "city", "role": "departure"}出发，要隔离吗？
+    - 我从[天津]{"entity": "city", "role": "departure"}回家要隔离吗
+    - 查询隔离政策
+    - 我能从[苏州]{"entity": "city", "role": "departure"}回家吗
+    - 去[南京]{"entity": "city", "role": "destination"}的隔离政策，从[大理]{"entity": "city", "role": "departure"}出发
+    - 现在从[成都]{"entity": "city", "role": "departure"}要不要核酸检测
+    - 从[大理]{"entity": "city", "role": "departure"}回[南京]{"entity": "city", "role": "destination"}的隔离政策
+    - 能从[拉萨]{"entity": "city", "role": "departure"}去[西安]{"entity": "city", "role": "destination"}吗
+    - 去[西安]{"entity": "city", "role": "destination"}能从[拉萨]{"entity": "city", "role": "departure"}吗
+    - 能回[香港]{"entity": "city", "role": "destination"}吗
+    - 想去[重庆]{"entity": "city", "role": "destination"}
+    - 明天打算去[海南]{"entity": "city", "role": "destination"}
+    - 打算去[宁波]{"entity": "city", "role": "destination"}
+    - 回[海南]{"entity": "city", "role": "destination"}，可以从[安顺]{"entity": "city", "role": "departure"}走吗
+    - 从[南京]{"entity": "city", "role": "departure"}回[大理]{"entity": "city", "role": "destination"}的隔离政策
+    - 回家要隔离吗
+    - 能回家吗
+    - 去[西双版纳]{"entity": "city", "role": "destination"}要不要隔离
+    - 去[安庆]{"entity": "city", "role": "destination"}要隔离吗
+    - 想去[大理]{"entity": "city", "role": "destination"}，从[南京]{"entity": "city", "role": "departure"}要核酸报告吗
+    - 后天去[无锡]{"entity": "city", "role": "destination"}要核酸检测吗
+    - [上海]{"entity": "city", "role": "destination"}的隔离政策
+    - 去[合肥]{"entity": "city", "role": "destination"}要不要隔离
+    - 去[北京]{"entity": "city", "role": "destination"}要隔离吗
+    - 我想从[上海]{"entity": "city", "role": "departure"}回[广州]{"entity": "city", "role": "destination"}
+    - 回[广州]{"entity": "city", "role": "destination"}，想从[上海]{"entity": "city", "role": "departure"}走
+    - 现在从[北京]{"entity": "city", "role": "departure"}去[大理]{"entity": "city", "role": "destination"}要不要隔离
+    - 现在去[大理]{"entity": "city", "role": "destination"}，从[北京]{"entity": "city", "role": "departure"}走要核酸检测吗
+    - 从[成都]{"entity": "city", "role": "departure"}去[哈尔滨]{"entity": "city", "role": "destination"}要核酸检测报告吗
+    - [宝鸡]{"entity": "city", "role": "destination"}的隔离政策
+    - 现在能回[台湾]{"entity": "city", "role": "destination"}吗
+    - 现在能回[天津]{"entity": "city", "role": "destination"}吗
+    - 去[哈尔滨]{"entity": "city", "role": "destination"}，从[成都]{"entity": "city", "role": "departure"}启程
+    - 可以从[安顺]{"entity": "city", "role": "departure"}去[海南]{"entity": "city", "role": "destination"}吗
+    - 你知道[杭州]{"entity": "city", "role": "destination"}的隔离政策吗
+    - 能从[西安]{"entity": "city", "role": "departure"}去[拉萨]{"entity": "city", "role": "destination"}吗
+    - 想去[拉萨]{"entity": "city", "role": "destination"}玩儿，从[西安]{"entity": "city", "role": "departure"}出发要不要紧？
+    - 我想从[广州]{"entity": "city", "role": "departure"}回[上海]{"entity": "city", "role": "destination"}
+    - 出[北京]{"entity": "city", "role": "departure"}要核酸检测报告吗
+    - 现在从[乌鲁木齐]{"entity": "city", "role": "departure"}出得去吗
+    - 能从[连云港]{"entity": "city", "role": "departure"}回家吗
+    - 可以从[海南]{"entity": "city", "role": "departure"}去[安顺]{"entity": "city", "role": "destination"}吗
+    - 我在[西安]{"entity": "city", "role": "departure"}，回家要不要隔离
+    - 我从[杭州]{"entity": "city", "role": "departure"}回家要隔离吗
+    - 去[北京]{"entity": "city", "role": "destination"}，从[大理]{"entity": "city", "role": "departure"}要隔离吗
+    - 能回[苏州]{"entity": "city", "role": "destination"}吗
+    - 去[安顺]{"entity": "city", "role": "destination"}，可以从[海南]{"entity": "city", "role": "departure"}走吗？
+    - [北京]{"entity": "city", "role": "departure"}能去[上海]{"entity": "city", "role": "destination"}吗
+    - [上海]{"entity": "city", "role": "destination"}能去[北京]{"entity": "city", "role": "departure"}吗
+    - 我能从[哈尔滨]{"entity": "city", "role": "departure"}回家吗
+    - 现在从[安庆]{"entity": "city", "role": "departure"}要不要核酸检测
+    - [上海]{"entity": "city", "role": "destination"}能从[北京]{"entity": "city", "role": "departure"}走吗
+    - 现在从[台湾]{"entity": "city", "role": "departure"}要核酸报告吗
+    - 出[香港]{"entity": "city", "role": "departure"}要核酸检测报告吗
+    - 从[哈尔滨]{"entity": "city", "role": "departure"}去[成都]{"entity": "city", "role": "destination"}要核酸检测报告吗
+    - 现在从[海南]{"entity": "city", "role": "departure"}出得去吗
+    - 能从[宁波]{"entity": "city", "role": "departure"}回家吗
+    - 想回[上海]{"entity": "city", "role": "destination"}，从[广州]{"entity": "city", "role": "departure"}走可不可？
+    - 现在从[大理]{"entity": "city", "role": "departure"}去[北京]{"entity": "city", "role": "destination"}要不要隔离
+    - 去[成都]{"entity": "city", "role": "destination"}耍，[哈尔滨]{"entity": "city", "role": "departure"}出发要隔离吗
+    - [连云港]{"entity": "city", "role": "destination"}的隔离政策
+    - 我想知道[西安]{"entity": "city", "role": "destination"}的隔离政策
+    - 你能告诉我[哈尔滨]{"entity": "city", "role": "destination"}的隔离政策吗
+    - 想去[成都]{"entity": "city", "role": "destination"}
+    - 现在从[重庆]{"entity": "city", "role": "departure"}要核酸报告吗
+    - 我在[无锡]{"entity": "city", "role": "departure"}，回家要不要隔离

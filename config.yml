@@ -4,7 +4,7 @@ pipeline:
   - name: MitieNLP
     model: data/total_word_feature_extractor_zh.dat
   - name: JiebaTokenizer
-    # dictionary_path: data/dict.txt
+    dictionary_path: data/dict.txt
   - name: MitieFeaturizer
   - name: RegexFeaturizer
     use_word_boundaries: False
@@ -14,7 +14,7 @@ pipeline:
     cache_dir: data/bert-base-chinese
   - name: DIETClassifier
     epochs: 200
-    constrain_similarities: true
+    constrain_similarities: True
   - name: EntitySynonymMapper
   - name: ResponseSelector
     epochs: 100
